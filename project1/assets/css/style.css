@@ -1,0 +1,150 @@
+html,body,div,h1,h2,h3,h4,h5,h6,p,img,figure,figcaption,article,section{
+    
+    border:0;
+    font-family: serif;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    color: #512200;
+    
+}
+
+ul li a:link { 
+	color: #512200;
+}
+
+ul li a:hover { 
+	color: #EE9921;
+}
+
+article, section{
+    display: block;
+}
+
+#cv {
+	width: 90%;
+	max-width: 800px;
+	background: #fbfbfb;
+	margin: 30px auto;
+}
+
+.mainDetails {
+	padding: 25px 35px;
+	border-bottom: 2px solid #EE9921;
+	background: #fbfbfb;
+}
+
+
+
+
+figure {
+	width: 12.5%;
+	float: left;
+	margin-right: 30px;
+}
+
+img {
+    
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+}
+
+#mainArea {
+	padding: 0 40px;
+}
+
+section {
+	border-top: 1px solid #dedede;
+	padding: 20px 0 0;
+}
+
+
+.sectionTitle {
+	float: left;
+	width: 25%;
+}
+
+.sectionContent {
+	float: right;
+	width: 72.5%;
+}
+
+.sectionTitle h1 {
+	
+	font-style: italic;
+	font-size: 1.5em;
+	color: #EE9921;
+}
+
+.sectionContent h2 {
+	font-size: 1.5em;
+	margin-bottom: -2px;
+}
+
+
+
+#name{
+    
+}
+
+#name h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+	font-family: serif;
+	margin-bottom: 6px;
+}
+
+#name h2 {
+	font-size: 1.5em;
+	margin-left: 2px;
+	font-family: serif;
+}
+
+#contactDetails{
+    float: left;
+    margin-top: 0.5em;
+    
+}
+
+
+#contactDetails ul {
+	list-style-type: none;
+	font-size: 0.9em;
+	margin-top: 2px;
+    margin-left: -2.5em;
+
+}
+
+#contactDetails ul li {
+	margin-bottom: 3px;
+	color: #512200;
+}
+
+#contactDetails ul li a, a[href^=tel] {
+	color: #512200; 
+	text-decoration: none;
+}
+
+#contactDetails ul li a:hover { 
+	color: #EE9921;
+}
+
+#navi{
+    float: left;
+    margin-left: 5em
+}
+
+#navi li{
+        
+        color: #512200;
+        display: inline;
+    }
+
+
+
+
+.clear{
+    clear: both;
+}

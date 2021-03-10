@@ -1,0 +1,589 @@
+body{
+    font-family: 'Abel';
+    background-color: #0b0c10;
+    border: solid 1px;
+    border-color: #66fcf1;
+    padding: 1em;
+    color: #66fcf1
+
+}
+
+.Main-Grid{
+    
+    display: grid;
+    grid-gap: 10px;
+		grid-template-columns: auto auto auto auto;
+		grid-template-areas:
+         "header  header  header header"
+			"navcontainer  navcontainer navcontainer navcontainer"
+            ". origins origins ."
+            "p-origins p-origins p-origins p-origins"
+            "internet  . . www"
+            "int  . . w"
+            "term term term term"
+            "email email ..... ....."
+            "p-email p-email ..... ....."
+            "...... ....... mosaic mosaic"
+            "...... ....... p-mosaic p-mosaic"
+            "gopher gopher ....... ........"
+            "p-gopher p-gopher ......... ......"
+            "....... ....... ftp ftp"
+            "....... ....... p-ftp p-ftp";
+    
+}
+
+
+#grid-terminology{
+    
+    display: grid;
+    grid-gap: 10px;
+		grid-template-columns: auto auto auto auto;
+		grid-template-areas:
+            "t t t t"
+            "navcontainer navcontainer navcontainer navcontainer"
+            "d1 d2 d3 d4"
+            "d5 d6 d7 d8"
+            "d9 d10 d11 d12"
+            "d13 d14 . ."
+
+}
+
+#pioneers{
+    
+    display: grid;
+    grid-gap: 15px;
+    
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        "header header header header"
+        "navcontainer navcontainer navcontainer navcontainer"
+        "ibush hbush hbush hbush"
+        "ibush pbush pbush pbush"
+        "hde hde hde ide"
+        "pde pde pde ide"
+        "itn htn htn htn"
+        "itn ptn ptn ptn"
+        "hsj hsj hsj isj"
+        "psj psj psj isj"
+        "itbl htbl htbl htbl"
+        "itbl ptbl ptbl ptbl"
+        "hma hma hma ima"
+        "pma pma pma ima"
+        "ilm hlm hlm hlm"
+        "ilm plm plm plm"
+        "hvc hvc hvc ivc"
+        "pvc pvc pvc ivc"
+}
+
+
+#http-grid{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        "header header header header"
+        "navcontainer navcontainer navcontainer navcontainer"
+        ". ihttp ihttp ."
+        "phttp phttp phttp phttp"
+        "pl pl pl pl";
+}
+
+#pl{
+    margin-top: -20px;
+    grid-area: pl;
+}
+#ihttp{
+    
+    
+    grid-area: ihttp;
+}
+
+#phttp{
+    
+    grid-area: phttp;
+}
+
+#head-terminology{
+    grid-area: t;
+    text-align: center;
+    background-color: #66fcf1;
+	color: #0b0c10;
+	border-radius: 5px;
+    position: sticky;
+    top: -1px;
+    
+}
+.overline{
+    text-decoration: overline;
+    text-decoration-color: #66fcf1;
+    
+    
+}
+
+
+.hover:hover{background-color: #66fcf1;
+		color: #0b0c10;
+		border-radius: 5px;
+        }
+#d1{grid-area: d1}
+#d2{grid-area: d2}
+#d3{grid-area: d3}
+#d4{grid-area: d4}
+#d5{grid-area: d5}
+#d6{grid-area: d6}
+#d7{grid-area: d7}
+#d8{grid-area: d8}
+#d9{grid-area: d9}
+#d10{grid-area: d10}
+#d11{grid-area: d11}
+#d12{grid-area: d12}
+#d13{grid-area: d13}
+#d14{grid-area: d14}
+
+.fontsize{
+    font-size: 20px;
+}
+#hbush{
+    height: 30px;
+    grid-area: hbush;
+   
+}
+#ibush{
+    grid-area: ibush;
+        float: left;
+    margin: 10px;
+    max-height: 250px;
+    max-width: 200px;
+
+}
+#pbush{
+    
+    grid-area: pbush;
+    
+}
+
+#hde{
+    height: 30px;
+    grid-area: hde;
+}
+
+#ide{
+    grid-area: ide;
+    float: right;
+    margin: 10px;
+    max-height: 250px;
+    max-width: 200px;
+}
+#pde{
+    
+    grid-area: pde;
+}
+
+
+#htn{grid-area: htn;
+    height: 30px;}
+
+#itn{grid-area: itn;
+        float: left;
+    margin: 10px;
+    max-height: 250px;
+    max-width: 200px;
+}
+#ptn{grid-area: ptn;}
+
+#hsj{grid-area: hsj;
+    height: 30px;}
+
+#isj{grid-area: isj;
+        float: right;
+    margin: 10px;
+    max-height: 250px;
+    max-width: 200px;
+}
+#psj{grid-area: psj;}
+
+#htbl{grid-area: htbl;
+    height: 30px;}
+
+#itbl{grid-area: itbl;
+        float: left;
+    margin: 10px;
+    max-height: 250px;
+    max-width: 200px;
+}
+#ptbl{grid-area: ptbl}
+
+#hma{grid-area: hma;
+    height: 30px;}
+
+#ima{grid-area: ima;
+        float: right;
+    margin: 10px;
+    max-height: 250px;
+    max-width: 200px;
+}
+#pma{grid-area: pma;}
+
+
+#hlm{grid-area: hlm;
+    height: 30px;}
+
+#ilm{grid-area: ilm;
+        float: left;
+    margin: 10px;
+    max-height: 250px;
+    max-width: 200px;
+}
+#plm{grid-area: plm;}
+
+
+#hvc{grid-area: hvc;
+    height: 30px;}
+
+#ivc{grid-area: ivc;
+        float: right;
+    margin: 10px;
+    max-height: 250px;
+    max-width: 200px;
+}
+#pvc{grid-area: pvc;}
+
+
+#term {
+    text-decoration: overline;
+    text-decoration-color: #66fcf1;
+    text-align: center;
+    grid-area: term;
+}
+
+#email {
+    text-decoration: overline;
+    text-decoration-color: #66fcf1;
+    text-align: center;
+    grid-area: email;
+}
+#p-email {
+    grid-area: p-email;
+}
+#mosaic {
+    text-decoration: overline;
+    text-decoration-color: #66fcf1;
+    text-align: center;
+    grid-area: mosaic;
+}
+#p-mosaic {
+    grid-area: p-mosaic;
+}
+
+#gopher {
+    text-decoration: overline;
+    text-decoration-color: #66fcf1;
+    text-align: center;
+    grid-area: gopher;
+}
+
+#p-gopher {
+    grid-area: p-gopher;
+}
+
+#ftp {
+    text-decoration: overline;
+    text-decoration-color: #66fcf1;
+    text-align: center;
+    grid-area: ftp;
+}
+
+#p-ftp {
+    grid-area: p-ftp;
+}
+
+
+.header{
+    text-align: center;
+    grid-area: header;
+    background-color: #66fcf1 ;
+	color: #0b0c10;
+    border-radius: 5px;
+    position: sticky;
+    top: -1px;
+    
+    
+}
+
+.head{
+    
+    text-align: center;
+    grid-area: head;
+    background-color: #66fcf1 ;
+	color: #0b0c10;
+    border-radius: 5px;
+    margin-top: 7px;
+    
+}
+
+.navcontainer{
+    
+    border-bottom: solid 1px;
+    border-bottom-color: #66fcf1;
+    grid-area: navcontainer;
+    display: inline;
+    
+    
+}
+
+#origins{
+    text-decoration: overline;
+    text-decoration-color: #66fcf1;
+    text-align: center;
+    grid-area: origins;
+    
+       
+}
+#p-origins{
+    text-align: center;
+    grid-area: p-origins;
+    
+}
+#internet{
+    text-decoration: overline;
+    text-decoration-color: #66fcf1;
+    text-align: center;
+    grid-area: internet;
+    
+}
+
+#www{
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-color: #66fcf1;
+    grid-area: www;
+    
+}
+
+#int{grid-area: int;}
+#w{grid-area: w;}
+
+
+a:link{
+    text-decoration: none;
+    color: #ffa354;
+}
+a:visited{
+    text-decoration: none;
+    color: #c5c6c7;
+}
+
+a:hover{
+    color: cyan;
+    text-decoration: none;
+}
+a:active{
+    color: #45a29e;
+    text-decoration: none;
+}
+.ref:link{
+    color: #ffa354;
+    text-decoration: underline;
+    text-decoration-color: #ffa354;
+    
+}
+
+.ref:visited{
+    color:#c5c6c7;
+    text-decoration: underline;
+    text-decoration-color: #c5c6c7;
+    
+}
+
+.ref:hover{
+    color:cyan;
+    text-decoration: underline;
+    text-decoration-color: cyan;
+    
+}
+
+
+.ref:active{
+    color:#45a29e;
+    text-decoration: underline;
+    text-decoration-color: #45a29e;
+    
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .Main-Grid{
+    
+    display: grid;
+    grid-gap: 10px;
+		grid-template-columns: auto auto;
+		grid-template-areas:
+         "header  header  "
+			"navcontainer  navcontainer "
+            "origins origins"
+            "p-origins p-origins"
+            "internet www"
+            "int w"
+            "term term"
+            "email email"
+            "p-email p-email"
+            "mosaic mosaic"
+            "p-mosaic p-mosaic"
+            "gopher gopher"
+            "p-gopher p-gopher"
+            "ftp ftp"
+            "p-ftp p-ftp";
+    
+}
+    
+    #grid-terminology{
+    
+    display: grid;
+    grid-gap: 10px;
+		grid-template-columns: auto auto;
+		grid-template-areas:
+            "t t"
+            "navcontainer navcontainer"
+            "d1 d2" 
+            "d3 d4"
+            "d5 d6" 
+            "d7 d8"
+            "d9 d10"
+            "d11 d12"
+            "d13 d14"
+
+}
+
+#pioneers{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "header header"
+        "navcontainer navcontainer"
+        "ibush hbush"
+        "ibush pbush"
+        "hde ide"
+        "pde ide"
+        "itn htn"
+        "itn ptn"
+        "hsj isj"
+        "psj isj"
+        "itbl htbl"
+        "itbl ptbl"
+        "hma ima"
+        "pma ima"
+        "ilm hlm"
+        "ilm plm"
+        "hvc ivc"
+        "pvc ivc"
+}
+
+
+#http-grid{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "header header"
+        "navcontainer navcontainer"
+        "ihttp ihttp"
+        "phttp phttp"
+        "pl pl";
+}
+
+    
+} 
+@media only screen and (min-width: 992px) {
+    
+    
+    .Main-Grid{
+    
+    display: grid;
+    grid-gap: 10px;
+		grid-template-columns: auto auto auto auto;
+		grid-template-areas:
+         "header  header  header header"
+			"navcontainer  navcontainer navcontainer navcontainer"
+            ". origins origins ."
+            "p-origins p-origins p-origins p-origins"
+            "internet  . . www"
+            "int  . . w"
+            "term term term term"
+            "email email ..... ....."
+            "p-email p-email ..... ....."
+            "...... ....... mosaic mosaic"
+            "...... ....... p-mosaic p-mosaic"
+            "gopher gopher ....... ........"
+            "p-gopher p-gopher ......... ......"
+            "....... ....... ftp ftp"
+            "....... ....... p-ftp p-ftp";
+    
+}
+
+
+#grid-terminology{
+    
+    display: grid;
+    grid-gap: 10px;
+		grid-template-columns: auto auto auto auto;
+		grid-template-areas:
+            "t t t t"
+            "navcontainer navcontainer navcontainer navcontainer"
+            "d1 d2 d3 d4"
+            "d5 d6 d7 d8"
+            "d9 d10 d11 d12"
+            "d13 d14 . ."
+
+}
+
+#pioneers{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        "header header header header"
+        "navcontainer navcontainer navcontainer navcontainer"
+        "ibush hbush hbush hbush"
+        "ibush pbush pbush pbush"
+        "hde hde hde ide"
+        "pde pde pde ide"
+        "itn htn htn htn"
+        "itn ptn ptn ptn"
+        "hsj hsj hsj isj"
+        "psj psj psj isj"
+        "itbl htbl htbl htbl"
+        "itbl ptbl ptbl ptbl"
+        "hma hma hma ima"
+        "pma pma pma ima"
+        "ilm hlm hlm hlm"
+        "ilm plm plm plm"
+        "hvc hvc hvc ivc"
+        "pvc pvc pvc ivc"
+}
+
+
+#http-grid{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        "header header header header"
+        "navcontainer navcontainer navcontainer navcontainer"
+        ". ihttp ihttp ."
+        "phttp phttp phttp phttp"
+        "pl pl pl pl";
+}
+
+    
+    
+    
+} 

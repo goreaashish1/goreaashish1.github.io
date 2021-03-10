@@ -1,0 +1,25 @@
+html{
+        background-color: aliceblue;
+}
+
+
+body { font-family: sans-serif;
+				margin-left: 10%;
+				margin-right: 10%;
+				border: 1px solid gray;
+				padding-left: 1em;
+				padding-right: 1em;
+                background-color: #D9FFF2;
+}
+
+h1{
+    color: darkmagenta;
+    text-align: center;
+    margin-top: 1em;
+}
+
+h2{
+    color: darkgreen;
+    font-weight: bold;
+    font-style: italic;
+}

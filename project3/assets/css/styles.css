@@ -1,0 +1,1192 @@
+body{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    background-color: #55473a;
+    border: solid 1px;
+    border-color: #b88f4d;
+    padding: 0.5em;
+    
+    color: #debb5f;
+
+}
+
+
+.grid-music{
+    
+    display: grid;
+    grid-gap: 30px 50px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+	grid-template-areas: 
+        
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . ii ii . . . ."
+        ". . . . . . . . . ."
+        ". . q2 . q1 . . . . ." 
+        ". . . . . q4 . q7 . ."
+        ". . q12 . q11 . . . . ."
+        ". . . . . q16 . q5 . ."
+        ". . . q15 . . . . . ."
+        ". . q6 . . q8 . . . ."
+        ". . . q9 . . q3 . . ."
+        ". . . q20 . q17 . . . ."
+        ". . q13 . . . q14 . . ."
+        ". . . q10 . . . . . ."
+        ". . . . . q19 . . . ."
+        ". . . . q18 . . . . ."
+        
+        
+        
+        
+        
+        ;
+        
+        
+        
+       
+}
+
+#ii:hover{
+    transform: rotate(360deg) scale(2.5);
+    z-index: 1;
+    
+}
+#ii{
+    grid-area: ii;
+    margin: auto;
+    max-height: 100px;
+    max-width: 100px;
+    transition: transform 2s;
+}
+.sformat{
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #e6e6e6;
+    color: #55473a;
+}
+
+.gformat{
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #debb5f;
+    color: #55473a;
+}
+
+#q1:hover, #q2:hover, #q3:hover, #q4:hover, #q5:hover, #q6:hover, #q7:hover, #q8:hover, #q16:hover, #q15:hover, #q14:hover, #q13:hover, #q12:hover, #q11:hover, #q10:hover, #q9:hover, #q17:hover, #q18:hover, #q19:hover, #q20:hover
+{
+    
+    transform: scale(2) rotate(0deg);
+    
+    
+    z-index: 1;
+    
+}
+
+#q1{grid-area: q1;
+    transform: rotate(20deg);
+    transition: transform 0.5s;}
+
+#q2{grid-area: q2;
+    transform: rotate(-20deg);
+transition: transform 0.5s;}
+
+#q3{grid-area: q3;
+    transform: rotate(15deg);
+transition: transform 0.5s;}
+
+#q4{grid-area: q4;
+    transform: rotate(-15deg);
+transition: transform 0.5s;}
+
+#q5{grid-area: q5;
+    transform: rotate(10deg);
+transition: transform 0.5s;}
+
+#q6{grid-area: q6;
+    transform: rotate(-10deg);
+transition: transform 0.5s;}
+
+#q7{grid-area: q7;
+    transform: rotate(-18deg);
+transition: transform 0.5s;}
+
+#q8{grid-area: q8;
+    transform: rotate(18deg);
+transition: transform 0.5s;}
+
+#q9{grid-area: q9;
+    transform: rotate(-12deg);
+transition: transform 0.5s;}
+
+#q10{grid-area: q10;
+    transform: rotate(12deg);
+transition: transform 0.5s;}
+
+#q11{grid-area: q11;
+    transform: rotate(20deg);
+transition: transform 0.5s;}
+
+#q12{grid-area: q12;
+    transform: rotate(-20deg);
+transition: transform 0.5s;}
+
+#q13{grid-area: q13;
+    transform: rotate(15deg);
+transition: transform 0.5s;}
+
+#q14{grid-area: q14;
+    transform: rotate(-15deg);
+transition: transform 0.5s;}
+
+#q15{grid-area: q15;
+    transform: rotate(16deg);
+transition: transform 0.5s;}
+
+#q16{grid-area: q16;
+    transform: rotate(-16deg);
+transition: transform 0.5s;}
+
+#q17{grid-area: q17;
+    transform: rotate(19deg);
+transition: transform 0.5s;}
+
+#q18{grid-area: q18;
+    transform: rotate(-19deg);
+transition: transform 0.5s;}
+
+#q19{grid-area: q19;
+    transform: rotate(20deg);
+transition: transform 0.5s;}
+
+#q20{grid-area: q20;
+    transform: rotate(-20deg);
+transition: transform 0.5s;}
+
+.grid-music-styles{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+	grid-template-areas: 
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . ham ham ham ham . ."
+        "pam pam pam pam pam pam pam pam"
+        "vam vam vam vam vam vam vam vam"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hbl hbl hbl hbl . ."
+        "pbl1 pbl1 pbl1 pbl1 pbl1 pbl1 pbl1 pbl1"
+        "blh blh blh blh blh blh blh blh"
+        "h3bl h3bl h3bl h3bl h3bl h3bl h3bl h3bl"
+        "pbl2 pbl2 pbl2 pbl2 pbl2 pbl2 pbl2 pbl2"
+        ". . . ibl1 ibl1 . . ."
+        "pbl3 pbl3 pbl3 pbl3 pbl3 pbl3 pbl3 pbl3"
+        ". . . ibl2 ibl2 . . ."
+        "vbl vbl vbl vbl vbl vbl vbl vbl"
+        "pbl4 pbl4 pbl4 pbl4 pbl4 pbl4 pbl4 pbl4"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hcm hcm hcm hcm . ."
+        "pcm pcm pcm pcm pcm pcm pcm pcm"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hc hc hc hc . ."
+        "pc1 pc1 pc1 pc1 pc1 pc1 pc1 pc1"
+        ". . . hjr hjr . . ."
+        ". . . ijr ijr . . ."
+        ". . . . . . . ."
+        "vjr vjr vjr vjr vjr vjr vjr vjr"
+        "pjr pjr pjr pjr pjr pjr pjr pjr"
+        "pc2 pc2 pc2 pc2 pc2 pc2 pc2 pc2"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hhh hhh hhh hhh . ."
+        "phh phh phh phh phh phh phh phh"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hj hj hj hj . ."
+        "pj pj pj pj pj pj pj pj"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . ho ho ho ho . ."
+        "po po po po po po po po"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hp hp hp hp . ."
+        "pp pp pp pp pp pp pp pp"
+        "popl popl popl popl popl popl popl popl"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hr hr hr hr . ."
+        "pr pr pr pr pr pr pr pr"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hro hro hro hro . ."
+        "pro pro pro pro pro pro pro pro"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . htm htm htm htm . ."
+        "ptm ptm ptm ptm ptm ptm ptm ptm"
+        
+        
+        
+        ;
+    
+    
+            
+            
+}
+
+
+
+
+
+.grid-musical-instruments{
+    
+    display: grid;
+    grid-gap: 30px 50px;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+	grid-template-areas: 
+        
+        ". . . . . . . ."
+        "hab hab hag hag hac hac hbj hbj"
+        "iab iab iag iag iac iac ibj ibj"
+        "aab aab aag aag aac aac abj abj"
+                ". . . . . . . ."
+        "hbg hbg hcl hcl hcmb hcmb hdr hdr"
+        "ibg ibg icl icl icmb icmb idr idr"
+        "abg abg acl acl acmb acmb adr adr"
+                ". . . . . . . ."
+        "heg heg hfl hfl hhc hhc hhp hhp"
+        "ieg ieg ifl ifl ihc ihc ihp ihp"
+        "aeg aeg afl afl ahc ahc ahp ahp"
+                ". . . . . . . ."
+        "hpi hpi hpo hpo hsi hsi hsb hsb"
+        "ipi ipi ipo ipo isi isi isb isb"
+        "api api apo apo asi asi asb asb"
+                ". . . . . . . ."
+        "hta hta htri htri htro htro htru htru"
+        "ita ita itri itri itro itro itru itru"
+        "ata ata atri atri atro atro atru atru"
+                ". . . . . . . ."
+        "hv hv hx hx . . . ."
+        "iv iv ix ix . . . ."
+        "av av ax ax . . . ."
+        
+        
+        
+        
+        
+        ;
+}
+
+
+ol{
+    padding-top: 1em;
+}
+
+.ref:link{
+    
+    color: #e6e6e6;
+}
+
+.ref:visited{
+    
+    color: #e6e6e6;
+}
+
+.ref:hover{
+    text-decoration: underline;
+    color: #e6e6e6;
+}
+.ref:active{
+    
+    color: #e6e6e6;
+}
+
+
+
+
+#hx{
+    grid-area: hx;
+}
+#ix{grid-area: ix;
+    }
+#ax{ grid-area: ax;
+    align-self: center;
+    width: 95%;
+    
+    
+}
+
+
+#hv{
+    grid-area: hv;
+}
+#iv{grid-area: iv;
+    }
+#av{ grid-area: av;
+    align-self: center;
+    width: 95%;
+}
+
+
+#htru{
+    grid-area: htru;
+}
+#itru{grid-area: itru;
+    }
+#atru{ grid-area: atru;
+    align-self: center;
+    width: 95%;
+}
+
+#htro{
+    grid-area: htro;
+}
+#itro{grid-area: itro;
+    }
+#atro{ grid-area: atro;
+    align-self: center;
+    width: 95%;
+}
+
+#htri{
+    grid-area: htri;
+}
+#itri{grid-area: itri;
+    }
+#atri{ grid-area: atri;
+    align-self: center;
+    width: 95%;
+    
+}
+
+#hta{
+    grid-area: hta;
+}
+#ita{grid-area: ita;
+    }
+#ata{ grid-area: ata;
+    align-self: center;
+    width: 95%;
+}
+
+#hsb{
+    grid-area: hsb;
+}
+#isb{grid-area: isb;
+    }
+#asb{ grid-area: asb;
+    align-self: center;
+    width: 95%;
+}
+
+#hsi{
+    grid-area: hsi;
+}
+#isi{grid-area: isi;
+    }
+#asi{ grid-area: asi;
+    align-self: center;
+    width: 95%;
+}
+
+#hpo{
+    grid-area: hpo;
+}
+#ipo{grid-area: ipo;
+    }
+#apo{ grid-area: apo;
+    align-self: center;
+    width: 95%;
+}
+
+#hpi{
+    grid-area: hpi;
+}
+#ipi{grid-area: ipi;
+    }
+#api{ grid-area: api;
+    align-self: center;
+    width: 95%;
+}
+#hhp{
+    grid-area: hhp;
+}
+#ihp{grid-area: ihp;
+    }
+#ahp{ grid-area: ahp;
+    align-self: center;
+    width: 95%;
+}
+
+#hhc{
+    grid-area: hhc;
+}
+#ihc{grid-area: ihc;
+    }
+#ahc{ grid-area: ahc;
+    align-self: center;
+    width: 95%;
+}
+
+#hfl{
+    grid-area: hfl;
+}
+#ifl{grid-area: ifl;
+    }
+#afl{ grid-area: afl;
+    align-self: center;
+    width: 95%;
+}
+
+#heg{
+    grid-area: heg;
+}
+#ieg{grid-area: ieg;
+    }
+#aeg{ grid-area: aeg;
+    align-self: center;
+    width: 95%;
+}
+
+#hdr{
+    grid-area: hdr;
+}
+#idr{grid-area: idr;
+    }
+#adr{ grid-area: adr;
+    align-self: center;
+    width: 95%;
+}
+
+#hcmb{
+    grid-area: hcmb;
+}
+#icmb{grid-area: icmb;
+    }
+#acmb{ grid-area: acmb;
+    align-self: center;
+    width: 95%;
+}
+#hcl{
+    grid-area: hcl;
+}
+#icl{grid-area: icl;
+    }
+#acl{ grid-area: acl;
+    align-self: center;
+    width: 95%;
+}
+
+#hbg{
+    grid-area: hbg;
+}
+#ibg{grid-area: ibg;
+    }
+#abg{ grid-area: abg;
+    align-self: center;
+    width: 95%;
+}
+#hbj{
+    grid-area: hbj;
+}
+#ibj{grid-area: ibj;
+    }
+#abj{ grid-area: abj;
+    align-self: center;
+    width: 95%;
+}
+
+#hac{
+    grid-area: hac;
+}
+#iac{grid-area: iac;
+    }
+#aac{ grid-area: aac;
+    align-self: center;
+    width: 95%;
+}
+#hag{
+    grid-area: hag;
+}
+#iag{grid-area: iag;
+    }
+#aag{ grid-area: aag;
+    align-self: center;
+    width: 95%;
+    
+    }
+#hab{
+    grid-area: hab;
+}
+#iab{grid-area: iab;
+    }
+#aab{ grid-area: aab;
+    align-self: center;
+    width: 95%;
+   
+    }
+
+#htm{grid-area: htm;}
+#ptm{grid-area: ptm;}
+#hro{grid-area: hro;}
+#pro{grid-area: pro;}
+#hr{grid-area: hr;}
+#pr{grid-area: pr;}
+#popl{grid-area: popl;}
+#hp{grid-area: hp;}
+#pp{grid-area: pp;}
+#ho{grid-area: ho;}
+#po{grid-area: po;}
+#hj{grid-area: hj;}
+#pj{grid-area: pj;}
+#hhh{grid-area: hhh;}
+#phh{grid-area: phh;}
+#hc{grid-area: hc;}
+#pc1{grid-area: pc1;}
+#hjr{grid-area: hjr;
+        text-align: center;}
+#pjr{grid-area: pjr;}
+#ijr{grid-area: ijr;
+    padding-left: 50px;
+    max-height: 400px;
+    max-width: 400px;}
+
+#vjr{grid-area: vjr;
+    margin: auto;}
+#pc2{grid-area: pc2;}
+#hcm{
+    grid-area: hcm;
+}
+
+#pcm{grid-area: pcm;}
+#hbl{
+    
+    grid-area: hbl;
+}
+
+#pbl1{grid-area: pbl1;}
+#pbl2{grid-area: pbl2;}
+#pbl3{grid-area: pbl3;}
+#pbl4{grid-area: pbl4;}
+
+#h3bl{grid-area: h3bl;}
+#blh:link{
+    grid-area: blh;
+   
+    color: #e6e6e6;
+}
+
+#blh:visited{
+    
+    color: #e6e6e6;
+}
+
+#blh:hover{
+    
+    color: #e6e6e6;
+}
+
+#blh:active{
+    
+    color: #e6e6e6;
+}
+
+
+
+
+#ibl1{grid-area: ibl1;
+        max-width: 500px;
+        max-height: 500px;}
+
+#ibl2{grid-area: ibl2;
+max-width: 500px;
+        max-height: 500px;}
+#vbl{grid-area: vbl;
+margin: auto;}
+
+
+#ham{
+    
+    
+    grid-area: ham;
+}
+#pam{
+    
+    grid-area: pam;
+}
+
+#vam{grid-area: vam;
+    margin: auto;}
+
+#header{
+    
+    grid-area: header;
+    position: fixed;
+    top:0.25em;
+    background-color: #debb5f;
+    color: #55473a;
+    border-radius: 25px;
+    text-align: center;
+    height: 45px;
+    margin-top: 5px;
+    width: 95%;
+    align-self: center;
+    z-index: 2;
+
+    
+}
+
+.hformat{
+    background-color: #debb5f;
+    color: #55473a;
+    border-radius: 25px;
+    text-align: center;
+    width: 95%;
+    height: 35px;
+    
+}
+
+.iformat{
+    
+    
+    margin: auto;
+    max-height: 200px;
+    max-width: 400px;
+}
+
+.collapse1 {
+     grid-area: b1;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  background-color: #e6e6e6;
+  color: #55473a;
+  cursor: pointer;
+  padding: 12.5px;
+    margin: 0;
+  width: 50px;
+  height:50px;
+  border-color: #55473a;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+    z-index: 2;
+    
+    
+}
+
+
+.active1, .collapse1:hover {
+  background-color: #e6e6e6;
+    border-color: #55473a;
+    
+    
+}
+
+
+
+.content1 {
+    border-radius: 25px;
+    position: fixed;
+    width: 95%;
+  padding-top: 50px;
+  display: none;
+  overflow: hidden;
+  background-color: #e6e6e6;
+    color: #55473a;
+   z-index: 1;
+    
+}
+
+
+
+
+
+.collapse {
+     grid-area: b1;
+    border-radius: 50px;
+    position: fixed;
+    top: 1em;
+  background-color: #debb5f;
+  color: #55473a;
+  cursor: pointer;
+  padding: 12.5px;
+    margin: 0;
+  width: 50px;
+  height:50px;
+  border-color: #55473a;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+    z-index: 2;
+    
+    
+}
+
+
+.active, .collapse:hover {
+  background-color: #debb5f;
+    border-color: #55473a;
+    
+    
+}
+
+
+
+.content {
+    border-radius: 25px;
+    position: fixed;
+    width: 95%;
+  padding-top: 50px;
+  display: none;
+  overflow: hidden;
+  background-color: #debb5f;
+    color: #55473a;
+   z-index: 1;
+    
+}
+
+a:link{
+    
+    color: #55473a;
+    text-decoration: none;
+}
+
+
+a:visited{
+    
+    color: #55473a;
+    
+}
+
+a:hover{
+    
+    color: #55473a;
+    text-decoration: underline;
+    
+
+}
+
+a:active{
+    
+    color: #55473a;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    
+    .grid-music{
+    
+    display: grid;
+    grid-gap: 30px 50px;
+    grid-template-columns: auto auto;
+	grid-template-areas: 
+        
+        ". ."
+        ". ."
+        ". ."
+        ". ."
+        "ii ii"
+        ". ."
+        "q2 q1" 
+        ". ."
+        "q4 q7"
+        ". ."
+        "q12 q11"
+        ". ."
+        "q16 q5"
+        ". ."
+        "q15 ."
+        ". ."
+        "q6 q8"
+        ". ."
+        "q9 q3"
+        ". ."
+        "q20 q17"
+        ". ."
+        "q13 q14"
+        ". ."
+        "q10 . "
+        ". ."
+        ". q19"
+        ". ."
+        "q18 ."
+        
+        
+        
+        
+        
+        ;
+        
+        
+        
+       
+}
+    #q1:hover, #q2:hover, #q3:hover, #q4:hover, #q5:hover, #q6:hover, #q7:hover, #q8:hover, #q16:hover, #q15:hover, #q14:hover, #q13:hover, #q12:hover, #q11:hover, #q10:hover, #q9:hover, #q17:hover, #q18:hover, #q19:hover, #q20:hover
+{
+    
+    transform: rotate(0deg);
+    
+    
+    z-index: 1;
+    
+}
+    
+    
+    
+    .grid-music-styles{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+	grid-template-areas: 
+        ". ."
+        ". ."
+        ". ."
+        ". ."
+        "ham ham"
+        "pam pam"
+        "vam vam"
+        ". ."
+        ". ."
+        "hbl hbl"
+        "pbl1 pbl1"
+        "blh blh"
+        "h3bl h3bl"
+        "pbl2 pbl2"
+        "ibl1 ibl1"
+        "pbl3 pbl3"
+        "ibl2 ibl2"
+        "vbl vbl"
+        "pbl4 pbl4"
+        ". ."
+        ". ."
+        "hcm hcm"
+        "pcm pcm"
+        ". ."
+        ". ."
+        "hc hc"
+        "pc1 pc1"
+        "hjr hjr"
+        "ijr ijr"
+        ". ."
+        "vjr vjr"
+        "pjr pjr"
+        "pc2 pc2"
+        ". ."
+        ". ."
+        "hhh hhh"
+        "phh phh"
+        ". ."
+        ". ."
+        "hj hj"
+        "pj pj"
+        ". ."
+        ". ."
+        "ho ho"
+        "po po"
+        ". ."
+        ". ."
+        "hp hp"
+        "pp pp"
+        "popl popl"
+        ". ."
+        ". ."
+        "hr hr"
+        "pr pr"
+        ". ."
+        ". ."
+        "hro hro"
+        "pro pro"
+        ". ."
+        ". ."
+        "htm htm"
+        "ptm ptm"
+        
+        
+        
+        ;
+    
+    
+            
+            
+}
+
+
+
+
+
+.grid-musical-instruments{
+    
+    display: grid;
+    grid-gap: 30px 50px;
+    grid-template-columns: auto auto;
+	grid-template-areas: 
+        
+        ". ."
+        "hab hab"   
+        "iab iab"  
+        "aab aab"   
+        "hag hag"
+        "iag iag"
+        "aag aag"
+        "hac hac"
+         "iac iac"
+        "aac aac"
+        "hbj hbj"
+        "ibj ibj"
+        "abj abj"
+        ". ."
+        "hbg hbg"   
+        "ibg ibg"   
+        "abg abg"   
+        "hcl hcl"
+        "icl icl"
+        "acl acl"
+        "hcmb hcmb"
+        "icmb icmb"
+        "acmb acmb"
+        "hdr hdr"
+        "idr idr"
+        "adr adr"
+        ". ."
+        "heg heg"   
+        "ieg ieg"   
+        "aeg aeg"   
+        "hfl hfl"
+        "ifl ifl"
+        "afl afl"
+        "hhc hhc"
+        "ihc ihc"
+        "ahc ahc"
+        "hhp hhp"
+        "ihp ihp"
+        "ahp ahp"
+
+        ". ."
+        "hpi hpi"   
+        "ipi ipi"  
+        "api api"   
+        "hpo hpo"
+        "ipo ipo"
+        "apo apo"
+        "hsi hsi"
+        "isi isi"
+        "asi asi"
+        "hsb hsb"
+        "isb isb"
+        "asb asb"
+        ". ."
+        "hta hta"   
+        "ita ita"   
+        "ata ata"   
+        "htri htri"
+        "itri itri"
+        "atri atri"
+        "htro htro"
+        "itro itro"
+        "atro atro"
+        "htru htru"
+        "itru itru"
+        "atru atru"
+        ". ."
+        "hv hv" 
+        "iv iv" 
+        "av av" 
+        "hx hx"
+        "ix ix"
+        "ax ax"
+        
+        
+        
+        
+        ;
+}
+
+    
+    
+    
+    
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    
+    
+    
+    .grid-music{
+    
+    display: grid;
+    grid-gap: 30px 50px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+	grid-template-areas: 
+        
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . . . . . . ."
+        ". . . . ii ii . . . ."
+        ". . . . . . . . . ."
+        ". . q2 . q1 . . . . ." 
+        ". . . . . q4 . q7 . ."
+        ". . q12 . q11 . . . . ."
+        ". . . . . q16 . q5 . ."
+        ". . . q15 . . . . . ."
+        ". . q6 . . q8 . . . ."
+        ". . . q9 . . q3 . . ."
+        ". . . q20 . q17 . . . ."
+        ". . q13 . . . q14 . . ."
+        ". . . q10 . . . . . ."
+        ". . . . . q19 . . . ."
+        ". . . . q18 . . . . ."
+        
+        
+        
+        
+        
+        ;
+        
+        
+        
+       
+}
+    
+    
+    
+    .grid-music-styles{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+	grid-template-areas: 
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . ham ham ham ham . ."
+        "pam pam pam pam pam pam pam pam"
+        "vam vam vam vam vam vam vam vam"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hbl hbl hbl hbl . ."
+        "pbl1 pbl1 pbl1 pbl1 pbl1 pbl1 pbl1 pbl1"
+        "blh blh blh blh blh blh blh blh"
+        "h3bl h3bl h3bl h3bl h3bl h3bl h3bl h3bl"
+        "pbl2 pbl2 pbl2 pbl2 pbl2 pbl2 pbl2 pbl2"
+        ". . . ibl1 ibl1 . . ."
+        "pbl3 pbl3 pbl3 pbl3 pbl3 pbl3 pbl3 pbl3"
+        ". . . ibl2 ibl2 . . ."
+        "vbl vbl vbl vbl vbl vbl vbl vbl"
+        "pbl4 pbl4 pbl4 pbl4 pbl4 pbl4 pbl4 pbl4"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hcm hcm hcm hcm . ."
+        "pcm pcm pcm pcm pcm pcm pcm pcm"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hc hc hc hc . ."
+        "pc1 pc1 pc1 pc1 pc1 pc1 pc1 pc1"
+        ". . . hjr hjr . . ."
+        ". . . ijr ijr . . ."
+        ". . . . . . . ."
+        "vjr vjr vjr vjr vjr vjr vjr vjr"
+        "pjr pjr pjr pjr pjr pjr pjr pjr"
+        "pc2 pc2 pc2 pc2 pc2 pc2 pc2 pc2"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hhh hhh hhh hhh . ."
+        "phh phh phh phh phh phh phh phh"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hj hj hj hj . ."
+        "pj pj pj pj pj pj pj pj"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . ho ho ho ho . ."
+        "po po po po po po po po"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hp hp hp hp . ."
+        "pp pp pp pp pp pp pp pp"
+        "popl popl popl popl popl popl popl popl"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hr hr hr hr . ."
+        "pr pr pr pr pr pr pr pr"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . hro hro hro hro . ."
+        "pro pro pro pro pro pro pro pro"
+        ". . . . . . . ."
+        ". . . . . . . ."
+        ". . htm htm htm htm . ."
+        "ptm ptm ptm ptm ptm ptm ptm ptm"
+        
+        
+        
+        ;
+    
+    
+            
+            
+}
+
+
+
+
+
+.grid-musical-instruments{
+    
+    display: grid;
+    grid-gap: 30px 50px;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+	grid-template-areas: 
+        
+        ". . . . . . . ."
+        "hab hab hag hag hac hac hbj hbj"
+        "iab iab iag iag iac iac ibj ibj"
+        "aab aab aag aag aac aac abj abj"
+                ". . . . . . . ."
+        "hbg hbg hcl hcl hcmb hcmb hdr hdr"
+        "ibg ibg icl icl icmb icmb idr idr"
+        "abg abg acl acl acmb acmb adr adr"
+                ". . . . . . . ."
+        "heg heg hfl hfl hhc hhc hhp hhp"
+        "ieg ieg ifl ifl ihc ihc ihp ihp"
+        "aeg aeg afl afl ahc ahc ahp ahp"
+                ". . . . . . . ."
+        "hpi hpi hpo hpo hsi hsi hsb hsb"
+        "ipi ipi ipo ipo isi isi isb isb"
+        "api api apo apo asi asi asb asb"
+                ". . . . . . . ."
+        "hta hta htri htri htro htro htru htru"
+        "ita ita itri itri itro itro itru itru"
+        "ata ata atri atri atro atro atru atru"
+                ". . . . . . . ."
+        "hv hv hx hx . . . ."
+        "iv iv ix ix . . . ."
+        "av av ax ax . . . ."
+        
+        
+        
+        
+        
+        ;
+}
+    
+    
+    
+}
+
